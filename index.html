@@ -36,8 +36,9 @@
 
 /* respond-section (v2) — hero banner (uploaded image) + 3 icon-tile cards */
 .respond-section{background:#f5f6f8;padding:80px clamp(24px,4vw,64px) 100px}
-.respond-hero{max-width:1240px;margin:0 auto;border-radius:32px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(10,23,53,0.25)}
-.respond-hero--image img{display:block;width:100%;height:auto}
+.respond-hero{max-width:1240px;margin:0 auto;border-radius:32px;position:relative;box-shadow:0 30px 80px rgba(10,23,53,0.25);line-height:0;isolation:isolate}
+.respond-hero--image img{display:block;width:100%;height:auto;border-radius:32px;-webkit-mask-image:-webkit-radial-gradient(#fff,#000)}
+@media (max-width:680px){.respond-hero--image img{border-radius:24px}}
 /* legacy CSS-scene classes (kept unused so cache doesn't 404 old builds) */
 .respond-hero__visual{position:relative;min-height:460px}
 .respond-hero__scene{position:absolute;inset:0;background:linear-gradient(135deg,#0e2350 0%,#0a1735 60%,#050f2a 100%);overflow:hidden}
