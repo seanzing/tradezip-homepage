@@ -34,6 +34,38 @@
 .mobile-menu .industries-group nav strong{display:block;padding:10px 12px 4px;color:var(--turquoise);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 .site-footer .footer-links{grid-template-columns:repeat(4,1fr) !important} .site-footer .footer-bottom{grid-column:1/-1 !important} .site-footer .footer-links .footer-industries strong{color:var(--turquoise);font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
 
+
+/* ===== 3-tier pricing grid (added by inject-pricing) ===== */
+.pricing-section{color:var(--navy);background:#f7f9fd}
+.pricing-section .section-heading>p:last-child{margin-top:20px}
+.pricing-grid{grid-template-columns:repeat(3,1fr);align-items:stretch;gap:18px;max-width:1240px;margin:70px auto 0;display:grid}
+.price-card{background:#fff;border:1px solid #dfe6f1;border-radius:24px;min-height:560px;padding:32px;position:relative;box-shadow:0 18px 50px #05053612;color:var(--navy)}
+.price-card--featured{background:linear-gradient(white,white) padding-box, var(--gradient) border-box;border:2px solid transparent;transform:translateY(-12px);box-shadow:0 25px 65px #3a5aff29}
+.popular-tag{color:#fff;letter-spacing:.08em;text-transform:uppercase;background:var(--gradient);border-radius:99px;padding:7px 10px;font-size:8px;font-weight:800;position:absolute;top:24px;right:24px}
+.price-card .plan-name{margin:0;font-size:15px;font-weight:800;color:var(--navy)}
+.price-card .price{align-items:flex-start;min-height:85px;margin:24px 0 8px;display:flex;color:var(--navy)}
+.price-card .price>span{margin-top:10px;font-size:21px;font-weight:800}
+.price-card .price strong{letter-spacing:-.06em;font-size:62px;line-height:1;font-weight:800}
+.price-card .price small{color:#7e889d;align-self:flex-end;margin:0 0 11px 7px;font-size:11px;font-weight:600}
+.price-card>p:nth-of-type(2){color:#758096;min-height:54px;font-size:13px;line-height:1.55;margin:0 0 6px}
+.price-card .price-button{color:#263552;border:1px solid #cfd8e7;border-radius:11px;place-items:center;min-height:50px;margin:24px 0 28px;font-size:13px;font-weight:800;transition:transform .18s,border-color .18s;display:grid;text-align:center}
+.price-card .price-button:hover{border-color:#3a5aff;transform:translateY(-2px)}
+.price-card .price-button--gradient{color:#fff;background:var(--gradient);border-color:transparent}
+.price-card ul{border-top:1px solid #e6eaf1;gap:16px;margin:0;padding:24px 0 0;list-style:none;display:grid}
+.price-card li{color:#4b5870;font-size:12px;line-height:1.4}
+.pricing-note{color:#8690a4;text-align:center;max-width:850px;margin:30px auto 0;font-size:11px;line-height:1.5}
+@media (max-width:1040px){
+  .pricing-grid{grid-template-columns:repeat(2,1fr)}
+  .price-card--featured{transform:none}
+  .pricing-grid .price-card:last-child{grid-column:1/3;max-width:600px;justify-self:center;width:100%}
+}
+@media (max-width:680px){
+  .pricing-grid{grid-template-columns:1fr;gap:14px;margin-top:40px}
+  .pricing-grid .price-card:last-child{grid-column:auto;max-width:none}
+  .price-card{min-height:0;padding:28px 22px;border-radius:22px}
+  .price-card .price-button{min-height:52px}
+}
+/* ===== end 3-tier pricing grid ===== */
 </style>
 <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDE5LjI3MjdDMjIgMjAuNzc5IDIwLjc3OSAyMiAxOS4yNzI3IDIySDE0LjcyNzNDMTMuMjIxIDIyIDEyIDIwLjc3OSAxMiAxOS4yNzI3VjEySDE5LjI3MjdDMjAuNzc5IDEyIDIyIDEzLjIyMSAyMiAxNC43MjczVjE5LjI3MjdaIiBmaWxsPSIjNjhDNEZGIi8+CjxwYXRoIGQ9Ik0yMCAyQzIxLjEwNDYgMiAyMiAyLjg5NTQzIDIyIDRWN0MyMiA4LjEwNDU3IDIxLjEwNDYgOSAyMCA5SDE3QzE1Ljg5NTQgOSAxNSA4LjEwNDU3IDE1IDdWNEMxNSAyLjg5NTQzIDE1Ljg5NTQgMiAxNyAySDIwWiIgZmlsbD0iIzBDNzlEOCIvPgo8cGF0aCBkPSJNNyAxNUM4LjEwNDU3IDE1IDkgMTUuODk1NCA5IDE3VjIwQzkgMjEuMTA0NiA4LjEwNDU3IDIyIDcgMjJINEMyLjg5NTQzIDIyIDIgMjEuMTA0NiAyIDIwVjE3QzIgMTUuODk1NCAyLjg5NTQzIDE1IDQgMTVIN1oiIGZpbGw9IiMwQzc5RDgiLz4KPHBhdGggZD0iTTEyIDEySDQuNzI3MjdDMy4yMjEwNCAxMiAyIDEwLjc3OSAyIDkuMjcyNzNWNC43MjcyN0MyIDMuMjIxMDQgMy4yMjEwNCAyIDQuNzI3MjcgMkg5LjI3MjczQzEwLjc3OSAyIDEyIDMuMjIxMDQgMTIgNC43MjcyN1YxMloiIGZpbGw9IiMyRTlFRkYiLz4KPC9zdmc+Cg=="/><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDE5LjI3MjdDMjIgMjAuNzc5IDIwLjc3OSAyMiAxOS4yNzI3IDIySDE0LjcyNzNDMTMuMjIxIDIyIDEyIDIwLjc3OSAxMiAxOS4yNzI3VjEySDE5LjI3MjdDMjAuNzc5IDEyIDIyIDEzLjIyMSAyMiAxNC43MjczVjE5LjI3MjdaIiBmaWxsPSIjNjhDNEZGIi8+CjxwYXRoIGQ9Ik0yMCAyQzIxLjEwNDYgMiAyMiAyLjg5NTQzIDIyIDRWN0MyMiA4LjEwNDU3IDIxLjEwNDYgOSAyMCA5SDE3QzE1Ljg5NTQgOSAxNSA4LjEwNDU3IDE1IDdWNEMxNSAyLjg5NTQzIDE1Ljg5NTQgMiAxNyAySDIwWiIgZmlsbD0iIzBDNzlEOCIvPgo8cGF0aCBkPSJNNyAxNUM4LjEwNDU3IDE1IDkgMTUuODk1NCA5IDE3VjIwQzkgMjEuMTA0NiA4LjEwNDU3IDIyIDcgMjJINEMyLjg5NTQzIDIyIDIgMjEuMTA0NiAyIDIwVjE3QzIgMTUuODk1NCAyLjg5NTQzIDE1IDQgMTVIN1oiIGZpbGw9IiMwQzc5RDgiLz4KPHBhdGggZD0iTTEyIDEySDQuNzI3MjdDMy4yMjEwNCAxMiAyIDEwLjc3OSAyIDkuMjcyNzNWNC43MjcyN0MyIDMuMjIxMDQgMy4yMjEwNCAyIDQuNzI3MjcgMkg5LjI3MjczQzEwLjc3OSAyIDEyIDMuMjIxMDQgMTIgNC43MjcyN1YxMloiIGZpbGw9IiMyRTlFRkYiLz4KPC9zdmc+Cg=="/>
 
@@ -1601,25 +1633,7 @@
 </section>
 
 <!-- Section 7: Recommended plan -->
-<section class="recommended-plan">
-  <div class="section-heading">
-    <p class="section-kicker">Recommended for hvac pros</p>
-    <h2>Growth pays for itself in one emergency service call.</h2>
-    <p>One saved after-hours call covers the month. And you’ll save several.</p>
-  </div>
-  <div class="recommended-plan__wrap">
-    <article class="price-card price-card--featured">
-      <span class="popular-tag">Recommended</span>
-      <p class="plan-name">TradeZip Growth</p>
-      <div class="price"><span>$</span><strong>129</strong><small>/month</small></div>
-      <p>AI receptionist, quotes with financing, automatic reviews — tuned for peak-season HVAC.</p>
-      <a class="price-button price-button--gradient" href="../../index.html#pricing" data-vertical="hvac">Choose Growth</a>
-      <ul><li>✓ Everything in Local ($79)</li><li>✓ AI receptionist 24/7</li><li>✓ Quotes with multi-option + financing</li><li>✓ Automatic review requests</li><li>✓ Maintenance plan automations</li></ul>
-    </article>
-    <a class="recommended-plan__link" href="../../index.html#pricing">→ Or start with Local at $79/month</a>
-    <p class="recommended-plan__pricing-note">From $79/month · No contracts · 30-day money-back guarantee</p>
-  </div>
-</section>
+<section class="section pricing-section" id="pricing" aria-labelledby="pricing-heading"><div class="section-heading section-heading--center"><p class="section-kicker">Simple plans that grow with you</p><h2 id="pricing-heading">Start with what you need.<br/>Add more as you grow.</h2><p>No long contracts. No complicated software rollout.</p></div><div class="pricing-grid"><article class="price-card"><p class="plan-name">TradeZip Local</p><div class="price"><span>$</span><strong>79</strong><small>/month</small></div><p>Your professionally built foundation for getting found in every area you serve.</p><a class="price-button " href="#contact" data-vertical="hvac" data-plan="local">Choose Local</a><ul><li>✓ Professionally designed 5-page website</li><li>✓ 50 local service-area landing pages</li><li>✓ Listings on 10 relevant directories</li><li>✓ AI website chat</li><li>✓ Print the Street</li></ul></article><article class="price-card price-card--featured"><span class="popular-tag">Most popular</span><p class="plan-name">TradeZip Growth</p><div class="price"><span>$</span><strong>129</strong><small>/month</small></div><p>Turn your local visibility into conversations, appointments and paid work.</p><a class="price-button price-button--gradient" href="#contact" data-vertical="hvac" data-plan="growth">Choose Growth</a><ul><li>✓ Everything in Local</li><li>✓ Weekly blogs and social media posts</li><li>✓ AI receptionist for incoming calls</li><li>✓ Quotes, invoices and online payments</li></ul></article><article class="price-card"><p class="plan-name">TradeZip Complete</p><div class="price"><span>$</span><strong>189</strong><small>/month</small></div><p>Expand your reach with more local pages, more content and online selling.</p><a class="price-button " href="#contact" data-vertical="hvac" data-plan="complete">Choose Complete</a><ul><li>✓ Everything in Growth</li><li>✓ Ecommerce</li><li>✓ 100 local service-area landing pages</li><li>✓ Two blogs and two social posts every week</li></ul></article></div><p class="pricing-note">From $79/month · No contracts · 30-day money-back guarantee. Print the Street is included in every package. Printing and postage are charged per campaign.</p></section>>
 
 <!-- Section 8: FAQ -->
 <section class="vertical-faq">
