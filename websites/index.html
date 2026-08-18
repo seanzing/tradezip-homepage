@@ -680,8 +680,24 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
+/* Sparse rows: center-justify when there are fewer than the max columns. */
+.hub-cards--auto,
+.hub-cards--sparse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.hub-cards--auto .hub-card,
+.hub-cards--sparse .hub-card {
+  flex: 0 1 minmax(280px, 380px);
+  min-width: 280px;
+  max-width: 380px;
+}
 @media (max-width: 1040px) {
   .hub-cards { grid-template-columns: repeat(2, 1fr); }
+  .hub-cards--auto .hub-card,
+  .hub-cards--sparse .hub-card { flex-basis: 100%; max-width: 480px; }
 }
 .hub-card {
   background: #fff;
@@ -1499,7 +1515,7 @@
     <h2>Auto</h2>
     <span>1 trade</span>
   </div>
-  <div class="hub-cards"><a class="hub-card" href="../websites/auto/">
+  <div class="hub-cards hub-cards--auto"><a class="hub-card" href="../websites/auto/">
   <div class="hub-card__icon">🚗</div>
   <h3>Auto Repair &amp; Services</h3>
   <p>Brakes, diagnostics, body work, mobile mechanics — fill the bays and keep them coming back.</p>
