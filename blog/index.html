@@ -89,7 +89,7 @@ main{flex:1}
 .section{padding:72px clamp(20px,5vw,80px)}
 .section--light{background:#f5f6f8;color:#1a2240}
 .section-title{font-size:clamp(22px,2.4vw,32px);font-weight:790;letter-spacing:-.032em;margin-bottom:10px;color:inherit}
-.section-intro{color:#7a8aab;font-size:15px;line-height:1.65;margin-bottom:36px;max-width:680px}
+.section-intro{color:var(--muted);font-size:15px;line-height:1.65;margin-bottom:36px;max-width:680px}
 .section--light .section-title{color:#1a2240}
 .section--light .section-intro{color:#5c6880}
 
@@ -104,6 +104,7 @@ main{flex:1}
 .article-card-meta{font-size:11px;color:#8895b2;margin-top:auto}
 .article-card-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:13px;font-weight:700;margin-top:12px}
 .article-card-link:hover{color:var(--cyan)}
+.card-img{width:100%;height:160px;object-fit:cover;display:block}
 .card-img-placeholder{width:100%;height:160px;background:linear-gradient(135deg,#0a1229,#1a2a5e);display:flex;align-items:center;justify-content:center;color:#ffffff20;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 
 @media(width<=900px){.article-grid{grid-template-columns:repeat(2,1fr)}}
@@ -137,7 +138,7 @@ main{flex:1}
 .industry-chip{background:#ffffff08;border:1px solid #ffffff18;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;transition:background .18s,border-color .18s}
 .industry-chip:hover{background:#ffffff12;border-color:#34e1d240}
 .industry-chip strong{font-size:13px;font-weight:700}
-.industry-chip small{color:#8895b2;font-size:11px}
+.industry-chip small{color:#b8c5e0;font-size:11px}
 .industry-group-label{color:var(--turquoise);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;margin-top:22px}
 @media(width<=860px){.industry-grid{grid-template-columns:repeat(2,1fr)}}
 @media(width<=480px){.industry-grid{grid-template-columns:1fr}}
@@ -297,7 +298,7 @@ main{flex:1}
     <p class="section-intro" style="color:#5c6880">The newest guides, checklists and how-tos from the TradeZIP team.</p>
     <div class="article-grid">
       <article class="article-card">
-  <div class="card-img-placeholder">Costs</div>
+  <img class="card-img" src="/assets/blog-placeholder-contractor-website-cost.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Costs</span>
     <h3><a href="/blog/costs/contractor-website-cost/" style="color:inherit">How Much Does a Contractor Website Cost?</a></h3>
@@ -307,7 +308,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-contractor-website-mistakes.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/contractor-website-mistakes/" style="color:inherit">Contractor Website Mistakes That Cost You Leads</a></h3>
@@ -317,7 +318,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-local-seo-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/local-seo-for-contractors/" style="color:inherit">Local SEO for Contractors: A Practical Guide</a></h3>
@@ -327,7 +328,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-service-area-pages-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/service-area-pages-for-contractors/" style="color:inherit">Do Service-Area Pages Help Contractors Rank Locally?</a></h3>
@@ -337,7 +338,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Checklists</div>
+  <img class="card-img" src="/assets/blog-placeholder-google-business-profile-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Checklists</span>
     <h3><a href="/blog/checklists/google-business-profile-for-contractors/" style="color:inherit">Google Business Profile Optimization Checklist for Contractors</a></h3>
@@ -347,7 +348,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-best-online-directories-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/best-online-directories-for-contractors/" style="color:inherit">The Best Online Directories for Contractors</a></h3>
@@ -357,7 +358,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">How To</div>
+  <img class="card-img" src="/assets/blog-placeholder-get-more-google-reviews-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">How To</span>
     <h3><a href="/blog/how-to/get-more-google-reviews-for-contractors/" style="color:inherit">How Contractors Can Get More Google Reviews</a></h3>
@@ -367,7 +368,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-ai-receptionist-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/ai-receptionist-for-contractors/" style="color:inherit">AI Receptionists for Contractors: What They Can and Cannot Do</a></h3>
@@ -377,7 +378,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-angi-thumbtack-lead-response-time.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/angi-thumbtack-lead-response-time/" style="color:inherit">How Quickly Should You Respond to Angi and Thumbtack Leads?</a></h3>
@@ -387,7 +388,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">How To</div>
+  <img class="card-img" src="/assets/blog-placeholder-get-more-neighborhood-jobs.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">How To</span>
     <h3><a href="/blog/how-to/get-more-neighborhood-jobs/" style="color:inherit">How to Turn One Completed Job Into More Work From the Neighborhood</a></h3>
@@ -405,7 +406,7 @@ main{flex:1}
   <p class="section-intro">The guides contractors come back to most.</p>
   <div class="article-grid">
     <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-contractor-website-mistakes.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/contractor-website-mistakes/" style="color:inherit">Contractor Website Mistakes That Cost You Leads</a></h3>
@@ -415,7 +416,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-local-seo-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/local-seo-for-contractors/" style="color:inherit">Local SEO for Contractors: A Practical Guide</a></h3>
@@ -425,7 +426,7 @@ main{flex:1}
   </div>
 </article>
 <article class="article-card">
-  <div class="card-img-placeholder">Guides</div>
+  <img class="card-img" src="/assets/blog-placeholder-service-area-pages-for-contractors.jpg" alt="" width="1200" height="630" loading="lazy"/>
   <div class="article-card-body">
     <span class="article-tag">Guides</span>
     <h3><a href="/blog/guides/service-area-pages-for-contractors/" style="color:inherit">Do Service-Area Pages Help Contractors Rank Locally?</a></h3>
