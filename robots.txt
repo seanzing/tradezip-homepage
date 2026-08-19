@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block internal search results (noindex pages)
+Disallow: /blog/search/
+Disallow: /blog/page/
+
+# Block filter/query combinations
+Disallow: /blog/industries/*?*
+Disallow: /blog/topics/*?*
+
+Sitemap: https://trade-zip.com/sitemap.xml
