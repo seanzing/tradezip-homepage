@@ -13,7 +13,7 @@ The TradeZIP brand journey is:
 2. Get found
 3. Get booked
 
-The website's confirmed industry directory contains four groups and eleven industry hubs:
+The website's confirmed industry directory contains four groups and twelve industry hubs:
 
 ### Home Systems
 
@@ -24,6 +24,7 @@ The website's confirmed industry directory contains four groups and eleven indus
 ### Home Projects
 
 - General Contractors
+- Roofing
 - Concrete & Masonry
 - Flooring & Tile
 - Painters
@@ -216,7 +217,7 @@ Do not index an empty or nearly empty hub. A hub should generally remain unpubli
 
 ## 5. Industry taxonomy
 
-The blog must use the same four groups and eleven industries shown on the TradeZIP website.
+The blog must use the same four groups and twelve industries shown on the TradeZIP website.
 
 | Industry group | Public industry label | Industry hub URL |
 | --- | --- | --- |
@@ -224,6 +225,7 @@ The blog must use the same four groups and eleven industries shown on the TradeZ
 | Home Systems | Electricians | `/blog/industries/electricians/` |
 | Home Systems | HVAC | `/blog/industries/hvac/` |
 | Home Projects | General Contractors | `/blog/industries/general-contractors/` |
+| Home Projects | Roofing | `/blog/industries/roofing/` |
 | Home Projects | Concrete & Masonry | `/blog/industries/concrete-masonry/` |
 | Home Projects | Flooring & Tile | `/blog/industries/flooring-tile/` |
 | Home Projects | Painters | `/blog/industries/painters/` |
