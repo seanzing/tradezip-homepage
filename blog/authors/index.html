@@ -135,6 +135,11 @@
     .author-avatar{width:96px;height:96px;font-size:36px}
   }
 </style>
+
+<!-- TZ:tracking -->
+<script src="/js/consent.js" defer></script>
+<script src="/js/tracking.js" defer></script>
+<script src="/js/forms.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -272,6 +277,7 @@
   <div class="footer-bottom">
     <span>© 2026 TradeZIP. All rights reserved.</span>
     <span>Privacy · Terms</span>
+    <span><a href="#" onclick="event.preventDefault();window.TZ&&window.TZ.openConsent&&window.TZ.openConsent();" style="color:inherit;text-decoration:underline">Cookie preferences</a></span>
   </div>
 </footer>
 <script type="application/ld+json">

@@ -175,6 +175,11 @@ main{flex:1}
 @media(width<=700px){.grid-2{grid-template-columns:1fr}}
 .col-header{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1a2240;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--gradient)}
 </style>
+
+<!-- TZ:tracking -->
+<script src="/js/consent.js" defer></script>
+<script src="/js/tracking.js" defer></script>
+<script src="/js/forms.js" defer></script>
 </head>
 <body class="page-wrap">
 <header class="site-header">
@@ -280,6 +285,7 @@ main{flex:1}
   <div class="footer-bottom">
     <span>© 2026 TradeZIP. All rights reserved.</span>
     <span>Privacy · Terms</span>
+    <span><a href="#" onclick="event.preventDefault();window.TZ&&window.TZ.openConsent&&window.TZ.openConsent();" style="color:inherit;text-decoration:underline">Cookie preferences</a></span>
   </div>
 </footer>
 </body>
