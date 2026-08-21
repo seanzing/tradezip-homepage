@@ -1365,6 +1365,14 @@
 }
 </style>
 
+
+<!-- TZ:tracking -->
+<script src="/js/consent.js" defer></script>
+<script src="/js/tracking.js" defer></script>
+<script src="/js/forms.js" defer></script>
+
+<!-- TZ:schema -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trade-zip.com/#organization","name":"TradeZIP","url":"https://trade-zip.com/","logo":{"@type":"ImageObject","url":"https://trade-zip.com/assets/tradezip-logo.png"},"sameAs":[]},{"@type":"WebSite","@id":"https://trade-zip.com/#website","url":"https://trade-zip.com/","name":"TradeZIP","publisher":{"@id":"https://trade-zip.com/#organization"}},{"@type":"WebPage","@id":"https://trade-zip.com/web-design/#webpage","url":"https://trade-zip.com/web-design/","name":"Industries we serve | TradeZIP","description":"TradeZIP builds done-for-you websites and local growth tools for 11 trade industries. Find your trade below.","isPartOf":{"@id":"https://trade-zip.com/#website"}}]}</script>
 </head>
 <body class="__variable_manrope_04xgoqf __variable_geist_mono_1diim1n antialiased">
 <main id="top">
@@ -1581,6 +1589,7 @@
   <div class="footer-bottom">
     <span>© 2026 TradeZIP. All rights reserved.</span>
     <span>Privacy · Terms</span>
+    <span><a href="#" onclick="event.preventDefault();window.TZ&&window.TZ.openConsent&&window.TZ.openConsent();" style="color:inherit;text-decoration:underline">Cookie preferences</a></span>
   </div>
 </footer>
 </main>

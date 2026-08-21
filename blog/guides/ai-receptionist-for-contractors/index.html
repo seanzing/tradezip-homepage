@@ -139,6 +139,11 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%;height:aut
 @media(max-width:680px){.site-header{height:68px;padding:0 16px}.brand img{width:124px;height:44px}.article-hero{padding:24px 20px 36px}.featured-image-wrap{padding:0 20px;margin-top:-20px}.article-outer{padding:28px 20px 60px}.related-grid{grid-template-columns:1fr}.site-footer{grid-template-columns:1fr}.footer-bottom{grid-column:auto;flex-direction:column;gap:8px}}
 
 </style>
+
+<!-- TZ:tracking -->
+<script src="/js/consent.js" defer></script>
+<script src="/js/tracking.js" defer></script>
+<script src="/js/forms.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -393,6 +398,7 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%;height:aut
   <div class="footer-bottom">
     <span>© 2026 TradeZIP. All rights reserved.</span>
     <span>Privacy · Terms</span>
+    <span><a href="#" onclick="event.preventDefault();window.TZ&&window.TZ.openConsent&&window.TZ.openConsent();" style="color:inherit;text-decoration:underline">Cookie preferences</a></span>
   </div>
 </footer>
 </body>

@@ -187,6 +187,14 @@
 }
 /* ===== end 3-tier pricing grid ===== */
 </style>
+
+<!-- TZ:tracking -->
+<script src="/js/consent.js" defer></script>
+<script src="/js/tracking.js" defer></script>
+<script src="/js/forms.js" defer></script>
+
+<!-- TZ:schema -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trade-zip.com/#organization","name":"TradeZIP","url":"https://trade-zip.com/","logo":{"@type":"ImageObject","url":"https://trade-zip.com/assets/tradezip-logo.png"},"sameAs":[]},{"@type":"WebSite","@id":"https://trade-zip.com/#website","url":"https://trade-zip.com/","name":"TradeZIP","publisher":{"@id":"https://trade-zip.com/#organization"}},{"@type":"WebPage","@id":"https://trade-zip.com/web-design/pool-service/#webpage","url":"https://trade-zip.com/web-design/pool-service/","name":"Pool & Spa Websites & Marketing | TradeZIP","description":"TradeZIP builds websites, 50 local pages and Print the Street campaigns for pool and spa companies \u2014 grow route density and win repair calls in every subdivision.","isPartOf":{"@id":"https://trade-zip.com/#website"},"about":{"@id":"https://trade-zip.com/web-design/pool-service/#service"}},{"@type":"Service","@id":"https://trade-zip.com/web-design/pool-service/#service","name":"Pool & Spa Websites & Marketing","description":"TradeZIP builds websites, 50 local pages and Print the Street campaigns for pool and spa companies \u2014 grow route density and win repair calls in every subdivision.","provider":{"@id":"https://trade-zip.com/#organization"},"serviceType":"Website design and local marketing for pool service","areaServed":{"@type":"Country","name":"United States"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"79","highPrice":"189","offerCount":"3","priceSpecification":[{"@type":"UnitPriceSpecification","name":"TradeZIP Local","price":"79","priceCurrency":"USD","unitCode":"MON"},{"@type":"UnitPriceSpecification","name":"TradeZIP Growth","price":"129","priceCurrency":"USD","unitCode":"MON"},{"@type":"UnitPriceSpecification","name":"TradeZIP Complete","price":"189","priceCurrency":"USD","unitCode":"MON"}]}}]}</script>
 </head>
 <body class="antialiased">
 <main id="top">
@@ -400,6 +408,7 @@
   <div class="footer-bottom">
     <span>© 2026 TradeZIP. All rights reserved.</span>
     <span>Privacy · Terms</span>
+    <span><a href="#" onclick="event.preventDefault();window.TZ&&window.TZ.openConsent&&window.TZ.openConsent();" style="color:inherit;text-decoration:underline">Cookie preferences</a></span>
   </div>
 </footer>
 </main>
