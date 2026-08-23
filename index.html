@@ -796,6 +796,18 @@
 
     /* --- Fixes 2026-08-22 (added after pack CSS so they win the cascade). --- */
 
+    /* Font: revert to the site's body stack (Manrope via --font-tradezip-sans).
+       The pack forced Avenir Next only, which drops Manrope and looks different
+       from the rest of the page. */
+    .tz-hero,
+    .tz-hero__eyebrow,
+    .tz-hero__headline,
+    .tz-hero__support,
+    .tz-hero__price,
+    .tz-hero__assurances,
+    .tz-hero__button,
+    .tz-hero__journey { font-family: inherit !important; }
+
     /* Fix 1: journey pills always render as "01 Get searched → 02 Get found → 03 Get booked"
        row. Pack ships 9 children (3 x b/span/i) so a plain 3-col grid breaks. Force flex. */
     .tz-hero__journey { display: flex !important; flex-wrap: nowrap; align-items: center;
