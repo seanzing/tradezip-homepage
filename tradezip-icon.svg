@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="550" viewBox="0 0 460 550">
+  <defs>
+    <linearGradient id="tradezipGradient" x1="0" y1="0.1" x2="1" y2="0.75">
+      <stop offset="0" stop-color="#16D2E5"/>
+      <stop offset="0.48" stop-color="#168CFF"/>
+      <stop offset="1" stop-color="#693CFF"/>
+    </linearGradient>
+    <mask id="pinCutout">
+      <rect width="100%" height="100%" fill="#fff"/>
+      <path fill="#000" d="M230 176c-37 0-63 27-63 62 0 38 30 64 63 97 33-33 63-59 63-97 0-35-26-62-63-62z"/>
+    </mask>
+  </defs>
+  <path fill="url(#tradezipGradient)" mask="url(#pinCutout)"
+        d="M230 31C119 31 42 112 42 220c0 116 92 196 188 293 96-97 188-177 188-293C418 112 341 31 230 31z"/>
+</svg>
